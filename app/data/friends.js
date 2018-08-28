@@ -82,7 +82,7 @@ var friendsArray = [
 	},
 	{
 		name: 'David Beckham',
-		photo: 'http://img.mindbodygreen.com/image/upload/c_limit,w_738,f_auto/ftr/Miss-Piggy-large-tonya-312.jpg',
+		photo: ' ',
 		scores: [
 			'1',
 			'1',

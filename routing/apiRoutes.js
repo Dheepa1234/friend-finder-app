@@ -2,7 +2,8 @@
 var path = require('path');
 
 // Import the list of friend entries
-var friends = require('../data/friends.js');
+var friends = require('..app/data/friends.js');
+var images = require ('..app/assets/images')
 
 // Export API routes
 module.exports = function(app) {

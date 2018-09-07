@@ -1,4 +1,4 @@
-// Link in Friends Data
+// Bring in Friends Data
 var friendsData = require("../app/data/friends.js");
 
 // Includes Two Routes
@@ -9,11 +9,13 @@ function apiRoutes(app) {
     res.json(friendsData);
   });
 
-  // A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
+  // A POST routes /api/friends. This will be used to handle incoming survey results. 
+  //This route will also facilitate the compatibility logic.
+
   app.post("/api/friends", function (req, res) {
 
-    // Parse new friend input to get integers (AJAX post seemed to make the numbers strings)
-    var newFriend = {
+    // Parse new friend input to get integers  
+    var findFriend = {
       name: req.body.name,
       photo: req.body.photo,
       scores: []
@@ -22,17 +24,17 @@ function apiRoutes(app) {
     for(var i=0; i < req.body.scores.length; i++){
       scoresArray.push( parseInt(req.body.scores[i]) )
     }
-    newFriend.scores = scoresArray;
+    findFriend.scores = scoresArray;
 
 
-    // Cross check the new friend entry with the existing ones
+    // Compare the new friend entry with the existing ones
     var scoreComparisionArray = [];
     for(var i=0; i < friendsData.length; i++){
 
-      // Check each friend's scores and sum difference in points
+      // Check each friend's scores and variation in points
       var currentComparison = 0;
-      for(var j=0; j < newFriend.scores.length; j++){
-        currentComparison += Math.abs( newFriend.scores[j] - friendsData[i].scores[j] );
+      for(var j=0; j < findFriend.scores.length; j++){
+        currentComparison += Math.abs( findFriend.scores[j] - friendsData[i].scores[j] );
       }
 
       // Push each comparison between friends to array
@@ -50,7 +52,7 @@ function apiRoutes(app) {
 
     }
 
-    // ***NOTE*** If the 2 friends have the same comparison, then the NEWEST entry in the friendsData array is chosen
+    //If the 2 friends have the same comparison, then the NEWEST entry in the friendsData array is chosen
     var bestFriendMatch = friendsData[bestMatchPosition];
 
 
@@ -59,7 +61,7 @@ function apiRoutes(app) {
 
 
     // Push the new friend to the friends data array for storage
-    friendsData.push(newFriend);
+    friendsData.push(findFriend);
 
   });
 

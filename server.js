@@ -5,6 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require ("path")
 
+
 // This stored variable Tells node that we are creating an "express" server
 
 var app = express();
@@ -15,6 +16,8 @@ var PORT = process.env.PORT || 8080;
 // This sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('public'))
+
 
 //ROUTER
 /// Below points our server to a series of "route" files.

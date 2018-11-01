@@ -34,7 +34,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Scott Moir',
-		photo: 'assets/images/Scott-Moir.jpeg',
+		photo: 'https://en.wikipedia.org/wiki/Sergei_Polunin#/media/File:Sergei_Polunin_Allan_Warren.jpg',
 		scores: [
 			'4',
 			'3',
@@ -50,7 +50,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Sidney Crosby',
-		photo: 'assets/images/Sidney-Crosby.jpeg',
+		photo: 'https://en.wikipedia.org/wiki/Sidney_Crosby#/media/File:Sidney_Crosby_1_2017-05-25_(Edited).jpg',
 		scores: [
 			'5',
 			'1',
@@ -66,7 +66,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Gareth Southgate',
-		photo: 'Gareth-Southgate.jpeg',
+		photo: 'https://www.independent.ie/sport/soccer/world-cup-2018/fixtures-and-results/gareth-southgate-encourages-premier-league-bosses-to-blood-young-english-players-37120756.html',
 		scores: [
 			'1',
 			'1',
@@ -81,8 +81,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'David Beckham',
-		photo: ' ',
+		name: 'Natalia Osipova',
+		photo: 'https://www.flickr.com/photos/royaloperahouse/12018571263/ ',
 		scores: [
 			'1',
 			'1',

@@ -2,7 +2,7 @@
 var friendsArray = [
 	{
 		name: 'Sergei Polunin',
-		photo: 'assets/images/Sergei-Polunin.jpeg',
+		photo: 'https://twitter.com/sergeipolunin',
 		scores: [
 			'1',
 			'5',
@@ -18,7 +18,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Tessa Virtue',
-		photo: 'assets/images/Tessa-Virtue.jpeg',
+		photo: 'https://www.imdb.com/name/nm3200612/mediaviewer/rm538756608',
 		scores: [
 			'2',
 			'4',
@@ -98,7 +98,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Tom Brady',
-		photo: 'assets/images/Tom-Brady.jpeg',
+		photo: 'https://en.wikipedia.org/wiki/Tom_Brady#/media/File:Tom_Brady_2017.JPG',
 		scores: [
 			'5',
 			'4',
@@ -130,7 +130,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Ekaterina Gordeeva',
-		photo: 'assets/images/Ekaterina-Gordeeva.jpeg',
+		photo: 'https://twitter.com/katiagordeeva',
 		scores: [
 			'5',
 			'5',
@@ -146,7 +146,7 @@ var friendsArray = [
 	},
 	{
 		name: 'Yuna Kim',
-		photo: 'assets/images/Yuna-Kim.jpeg',
+		photo: 'https://www.wsmv.com/news/report-yuna-kim-will-attend-figure-skating-events-at-pyeongchang/article_fcb535c1-5728-5b20-ae5b-583cc29508fa.html',
 		scores: [
 			'1',
 			'1',
